@@ -67,7 +67,8 @@ for zone in range(1, 6):
     df_line['Total Diff'] = (
         np.abs(df_line['Temp (F)'] - temp) * 0.4 +
         np.abs(df_line['Humidity (%)'] - humidity) * 0.4 +
-        np.abs(df_line['Filler Speed (%)'] - filler_speed) * 0.2
+        np.abs(df_line['Filler 
+            filler_speed = st.slider("Filler Speed (BPM)", 900, 1200, 1075)
     )
     best = df_line.sort_values("Total Diff").iloc[0]
     results.append({
