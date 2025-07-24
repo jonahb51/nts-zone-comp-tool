@@ -51,7 +51,7 @@ with st.sidebar:
     selected_line = st.selectbox("Line", ["L1", "L2"])
     temp = st.slider("Ambient Temp (Â°F)", 70, 100, 88)
     humidity = st.slider("Humidity (%)", 30, 80, 50)
-    filler_speed = st.slider("Filler Speed (%)", 80, 105, 93)
+    filler_speed = st.slider("Filler Speed (BPM)", 900, 1200, 1075)
     ai_percent = st.slider("AI (%)", 80, 100, 96)
     success_flag = st.selectbox("Success?", ["Yes", "No"])
     notes = st.text_area("Notes (optional)")
